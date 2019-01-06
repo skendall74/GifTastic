@@ -1,30 +1,38 @@
 /* API Project*/
 
-/* HTML, BODY CSS, JS*/
+/* HTML, BODY CSS, JS, JQuery*/
 
 body {
 	margin-top: 75px;
 	margin-bottom: 75px;
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
-	text-transform: uppercase;
+    text-transform: uppercase;
+    background: url('../images/stadium.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/wrigley.jpg', sizingMethod='scale')";
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/wrigley.jpg', sizingMethod='scale');
+    
 }
 
 .container {
-	/*background-color: rgba(255, 255, 255, 0.6);*/
 	width: auto;
 }
 
 h1 {
-	font-family: 'Fredoka One', cursive;
-	font-size: 55px;
-	color: #fff;
+	font-family: 'Exo 2', sans-serif;
+	font-size: 40px;
+    color: gold;
+    margin-bottom: 20px;
 }
 
 h3 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Merriweather Sans', sans-serif;
 	font-size: 15px;
-	color: #fff;
+	color: green;
 }
 
 form {
@@ -36,11 +44,11 @@ form {
 }
 
 .gifs {
-	display: inline;
+	display: inline-block;
 }
 
 #gifsView {
-	display: inline;
+	display: inline-block;
 	margin-bottom: 40px;
 }
 
@@ -48,9 +56,19 @@ form {
 	cursor: crosshair;
 }
 
+p{
+    color: black;
+    background-color: white;
+}
+
 img.squiggle {
 	top:0;
 	left:0;
+}
+
+label{
+    color: white;
+    font-display: bold;
 }
 
 #team-form {
@@ -59,8 +77,18 @@ img.squiggle {
 
 button {
 	background: #fff;
-	margin: 5px;
-	font-family: 'Open Sans', sans-serif;
+	margin: 10px;
+	font-family: 'Exo 2', sans-serif;
+	color: black;
+}
+
+button:hover {
+	background: red;
+	color: white;
+}
+
+button:active {
+	background: green;
 	color: black;
 }
 
