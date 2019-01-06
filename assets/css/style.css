@@ -44,7 +44,8 @@ form {
 }
 
 .gifs {
-	display: inline-block;
+    display: inline-block;
+    margin: 2px;
 }
 
 #gifsView {

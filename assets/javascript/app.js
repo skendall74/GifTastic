@@ -31,7 +31,6 @@ $("#addTeam").on("click", function(){
 function displayGifs(){
 	var team = $(this).attr("data-name");
 	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + team + "&limit=10&api_key=nsUjmEV9qhuUcAbACjNRw3sQfib4RBOP";
-
 		// creates ajax call
 		$.ajax({url: queryURL, method: "GET"}).done(function (response) {
 			console.log(response.data);
@@ -51,11 +50,12 @@ function displayGifs(){
                 var p = $("<p>").text("Rating: " + results[i].rating);
                 gifDiv.prepend(p);
                 gifDiv.prepend(teamGif)
-				$("#gifsView").prepend(gifDiv);
+                $("#gifsView").prepend(gifDiv);
             } 
 			
 		});
 }
+
 
 // function for animating gifs
 $(document).on('click', '.gif', function(){
