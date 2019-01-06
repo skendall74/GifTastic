@@ -39,10 +39,11 @@ function displayGifs(){
 			// for loop goes through each gif and adds these variables
 			for (var i = 0; i < results.length; i++) {
                 // creates a generic div to hold the results
-				var gifDiv = $('<div class=gifs>');
+                var gifDiv = $('<div class=gifs>');
 				var teamGif = $('<img>');
 					teamGif.attr('src', results[i].images.fixed_height_still.url);
-					// teams for animate hover
+                    // teams for animate hover
+                    teamGif.attr('title', "Rating: " + results[i].rating);
 					teamGif.attr('data-still', results[i].images.fixed_height_still.url);
 					teamGif.attr('data-state', 'still');
 					teamGif.addClass('gif');
