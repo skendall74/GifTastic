@@ -1,6 +1,6 @@
 //JS Code
 
-var teams = ["Alabama Crimson Tide", "Arkansas Razorbacks", "Auburn Tigers", "Florida Gators", "Georgia Bulldogs", "Kentucky Wildcats", "LSU Tigers", "Mississippi State Bulldogs", "Ole Mississippi Running Rebels", "South Carolina Gamecocks", "Tennessee Volunteers", "Texas A&M Aggies", "Vanderbilt Commodores", "Family Matters", "Daria"];
+var teams = ["Alabama Crimson Tide", "Arkansas Razorbacks", "Auburn Tigers", "Florida Gators", "Georgia Bulldogs", "Kentucky Wildcats", "LSU Tigers", "Mississippi State Bulldogs", "Ole Mississippi Running Rebels", "South Carolina Gamecocks", "Tennessee Volunteers", "Texas A&M Aggies", "Vanderbilt Commodores",];
 
 // creates buttons for each of these
 function makeButtons(){ 
