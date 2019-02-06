@@ -35,7 +35,8 @@ function displayGifs(){
 		$.ajax({url: queryURL, method: "GET"}).done(function (response) {
 			console.log(response.data);
 			// save results as a variable
-            var results = response.data;
+			var results = response.data;
+			$('#gifsView').empty();
 			// for loop goes through each gif and adds these variables
 			for (var i = 0; i < results.length; i++) {
                 // creates a generic div to hold the results
@@ -49,8 +50,8 @@ function displayGifs(){
 					teamGif.addClass('gif');
                     teamGif.attr('data-animate', results[i].images.fixed_height.url);
                 var p = $("<p>").text("Rating: " + results[i].rating);
-                gifDiv.prepend(p);
-                gifDiv.prepend(teamGif)
+				gifDiv.prepend(p);
+				gifDiv.prepend(teamGif);
                 $("#gifsView").prepend(gifDiv);
             } 
 			
