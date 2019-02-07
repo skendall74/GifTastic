@@ -3,94 +3,91 @@
 /* HTML, BODY CSS, JS, JQuery*/
 
 body {
-	margin-top: 75px;
-	margin-bottom: 75px;
-	text-align: center;
-	font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    background: url('../images/stadium.jpg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/stadium.jpg', sizingMethod='scale')";
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/stadium.jpg', sizingMethod='scale');
-    
+  margin-top: 75px;
+  margin-bottom: 75px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  background: url("../images/stadium.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .container {
-	width: auto;
+  width: auto;
 }
 
 h1 {
-	font-family: 'Exo 2', sans-serif;
-	font-size: 40px;
-    color: gold;
-    margin-bottom: 20px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 40px;
+  color: gold;
+  margin-bottom: 20px;
 }
 
 h3 {
-	font-family: 'Merriweather Sans', sans-serif;
-	font-size: 15px;
-	color: green;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 15px;
+  color: green;
 }
 
 form {
-	color: black;
+  color: black;
 }
 
 #buttonsView {
-	display: inline;
+  display: inline;
 }
 
 .gifs {
-    display: inline-block;
-    margin: 2px;
+  display: inline-block;
+  margin: 2px;
 }
 
 #gifsView {
-	display: inline-block;
-	margin-bottom: 40px;
+  display: inline-block;
+  margin-bottom: 40px;
 }
 
 .gif {
-	cursor: crosshair;
+  cursor: crosshair;
 }
 
-p{
-    color: black;
-    background-color: white;
+p {
+  color: black;
+  background-color: white;
 }
 
 img.squiggle {
-	top:0;
-	left:0;
+  top: 0;
+  left: 0;
 }
 
-label{
-    color: white;
-    font-display: bold;
+label {
+  color: white;
+  font-display: bold;
 }
 
 #team-form {
-	display: inline;
+  display: inline;
 }
 
 button {
-	background: #fff;
-	margin: 10px;
-	font-family: 'Exo 2', sans-serif;
-	color: black;
+  background: #fff;
+  margin: 10px;
+  font-family: "Exo 2", sans-serif;
+  color: black;
 }
 
 button:hover {
-	background: red;
-	color: white;
+  background: orange;
+  color: white;
 }
 
 button:active {
-	background: green;
-	color: black;
+  background: green;
+  color: black;
 }
 
 textarea:focus {
@@ -101,7 +98,7 @@ textarea:focus {
 }
 
 .waves-effect {
-	top: 15px;
+  top: 15px;
 }
 
 /* border */
@@ -109,22 +106,38 @@ textarea:focus {
 #bottom,
 #left,
 #right {
-	background: #fff;
-	position: fixed;
+  background: #fff;
+  position: fixed;
 }
 
 #left,
 #right {
-	top: 0; bottom: 0;
-	width: 15px;
+  top: 0;
+  bottom: 0;
+  width: 15px;
 }
-	#left { left: 0; }
-	#right { right: 0; }
+#left {
+  left: 0;
+}
+#right {
+  right: 0;
+}
 
 #top,
 #bottom {
-	left: 0; right: 0;
-	height: 15px;
+  left: 0;
+  right: 0;
+  height: 15px;
 }
-	#top { top: 0; }
-	#bottom { bottom: 0; }
+#top {
+  top: 0;
+}
+#bottom {
+  bottom: 0;
+}
+
+@media screen and (max-width: 640px) {
+  h1 {
+   font-size: 20px;
+  }
+}
